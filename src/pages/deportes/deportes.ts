@@ -1,30 +1,23 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { DeportesPage } from "../deportes/deportes";
-import { UserService } from '../../services/user'
+import { UserService } from "../../services/user";
 
 /**
- * Generated class for the GeneralesPage page.
+ * Generated class for the DeportesPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-generales',
-  templateUrl: 'generales.html',
+  selector: 'page-deportes',
+  templateUrl: 'deportes.html',
 })
-export class GeneralesPage {
-
-  public data: any;
+export class DeportesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public userSrv: UserService) {
-      this.data = this.userSrv.data;
-  }
-
-  deportes(){
-    this.navCtrl.push(DeportesPage);
+      
   }
 
 
